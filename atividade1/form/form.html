@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulário</title>
+      </head>
+      <body>
+        <h1>Informações Pessoais</h1>
+        <form method="post" action="http://localhost:3000/user">
+          <fieldset>
+            <legend>Cadastro do Cliente</legend>
+
+            <label for="nome">
+              Nome:
+              <input name="nome" id="nome" type="text" required minlength="2" />
+            </label>
+
+            <label for="sexo">
+              Sexo: <input name="sexo" id="sexo" type="radio" /> Masculino
+              <input name="sexo" id="sexo" type="radio" /> Feminino
+            </label>
+
+            <label for="idade">
+              Idade:
+              <input name="idade" type="number" id="idade" min="1" max="160" />
+            </label>
+
+            <label for="endereco">
+              Endereço:
+              <input
+                name="endereco"
+                type="text"
+                id="endereco"
+                placeholder="Digite o endereço"
+              />
+            </label>
+
+            <label for="cidade">
+              Cidade:
+              <input
+                name="cidade"
+                type="text"
+                id="cidade"
+                placeholder="Digite a cidade"
+              />
+            </label>
+
+            <label for="estado"
+              >Estado:
+              <select name="estado" id="estado">
+                <option value="" disabled selected hidden>UF</option>
+                <option value="acre">Acre</option>
+                <option value="alagoas">Alagoas</option>
+                <option value="amapa">Amapá</option>
+                <option value="amazonas">Amazona</option>
+                <option value="bahia">Bahia</option>
+                <option value="ceara">Ceará</option>
+                <option value="df">Distrito Fedaral</option>
+                <option value="es">Espírito Santo</option>
+                <option value="goias">Goiás</option>
+                <option value="maranhao">Maranhão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do Sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="para">Pará</option>
+                <option value="paraiba">Paraíba</option>
+                <option value="parana">Paraná</option>
+                <option value="pernambuco">Peranambuco</option>
+                <option value="piaui">Piauí</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="rn">Rio Grande do Norte</option>
+                <option value="rs">Rio Grande do sul</option>
+                <option value="rodonia">Rondônia</option>
+                <option value="roraima">Roraima</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="sp">São Paulo</option>
+                <option value="sergipe">Sergipe</option>
+                <option value="tocantins">Tocantins</option>
+              </select>
+            </label>
+
+            <label for="cep"
+              >CEP:
+              <input name="cep" type="text" id="cep" placeholder="XXXXX-XXX" />
+            </label>
+
+            <label for="telefoneRes"
+              >Tel/Res:
+              <input
+                name="telefoneRes"
+                type="text"
+                id="telefone-res"
+                placeholder="(99) 99999-9999"
+              />
+            </label>
+
+            <label for="telefoneCel"
+              >Tel/Cel:
+              <input
+                name="telefoneCel"
+                type="text"
+                id="telefone-cel"
+                placeholder="(99) 99999-9999"
+              />
+            </label>
+
+            <label for="email"
+              >Email:
+              <input
+                name="email"
+                type="email"
+                id="email"
+                placeholder="Digite o endereço de email"
+              />
+            </label>
+          </fieldset>
+          <button type="submit">Incluir</button>
+        </form>
+
+        <style>
+          body {
+            margin-left: 20rem;
+          }
+          form {
+            width: 35rem;
+          }
+          fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 0.9rem;
+          }
+          input {
+            margin-left: 0.5rem;
+          }
+          legend {
+            margin-bottom: 1rem;
+          }
+
+          #nome,
+          #email {
+            width: 20rem;
+          }
+          #endereco {
+            width: 25rem;
+          }
+          #cidade {
+            width: 16rem;
+          }
+          #estado {
+            max-width: max-content;
+          }
+
+          button {
+            margin-top: 0.7rem;
+            cursor: pointer;
+          }
+          fieldset {
+            border: 2px solid brown;
+          }
+          legend {
+            font-weight: 600;
+          }
+        </style>
+      </body>
+    </html>
+  </body>
+</html>
