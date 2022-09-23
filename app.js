@@ -41,3 +41,20 @@ const salarioTotal = salario + bonus;
 
 alert(`seu bonus este mês é R$ ${bonus} \n
 seu salario total este mês é R$ ${salarioTotal}`);
+
+// Qustão 6
+
+const eleitores = 15000;
+const votosValidos = 13100;
+const votosBrancos = 1500;
+const votosNulos = 400;
+
+alert(`Total de eleitores: ${eleitores} \n
+percentual de votos válidos: ${((100 * votosValidos) / eleitores).toFixed(
+  2
+)} % \n
+percentual de votos em branco: ${((100 * votosBrancos) / eleitores).toFixed(
+  2
+)} % \n
+percentual de votos nulos: ${((100 * votosNulos) / eleitores).toFixed(2)} % \n
+`);
