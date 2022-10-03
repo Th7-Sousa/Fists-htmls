@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <h1>Contato</h1>
+    <br />
+
+    <form method="post">
+      <label for="nome">
+        Nome e Sobrenome <br />
+        <input name="nome" type="text" class="dados-basicos" /><br />
+      </label>
+      <label for="email">
+        Email <br />
+        <input
+          name="email"
+          type="text"
+          class="dados-basicos"
+          placeholder="seuemail@dominio.com"
+        /><br />
+      </label>
+      <label for="telefone">
+        Telefone <br />
+        <input
+          name="telefone"
+          type="text"
+          class="dados-basicos"
+          placeholder="(xx)xxxxx-xxxx"
+        /><br />
+      </label>
+      <label for="mensagem">
+        Mensagem <br />
+        <textarea name="mensagem" id="mensagem" cols="42" rows="10"></textarea>
+      </label>
+
+      <fieldset>
+        <legend>Como prefere o nosso contato?</legend>
+        <input name="contato" type="radio" /> Email <br />
+        <input name="contato" type="radio" /> Telefone <br />
+        <input name="contato" type="radio" /> WhatsApp
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Qual horário prefere ser atendido?</legend>
+        <select name="atendimento">
+          <option name="atendimento" value="manha">Manhã</option>
+          <option name="atendimento" value="tarde">Tarde</option>
+          <option name="atendimento" value="noite">Noite</option>
+        </select>
+      </fieldset>
+      <br />
+      <section>
+        <input type="checkbox" /> Gostaria de receber nossas novidades por
+        email? <br /><br />
+        <button type="submit">Enviar formulário</button>
+      </section>
+      <br />
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+          <tr>
+            <td>Segunda</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>8h ~ 20h</td>
+          </tr>
+        </thead>
+      </table>
+    </form>
+
+    <style>
+      body {
+        margin-left: 2rem;
+        padding-bottom: 5rem;
+      }
+      input,
+      textarea {
+        margin: 0.5rem 0;
+      }
+      .dados-basicos,
+      textarea {
+        width: 20.3rem;
+        padding-left: 00.5rem;
+      }
+      fieldset {
+        width: 45rem;
+      }
+      table {
+        border-collapse: separate;
+      }
+      tr,
+      td,
+      th {
+        border: 1.5px solid black;
+        padding: 6px;
+        margin: 2px;
+      }
+      th {
+        color: #fff;
+        background-color: rgb(65, 63, 63);
+      }
+    </style>
+  </body>
+</html>
