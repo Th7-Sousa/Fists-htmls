@@ -1,0 +1,123 @@
+.caixa {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.menu__item a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.destaques {
+  color: azure;
+  font-size: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(3, 25%);
+  grid-template-rows: repeat(3, 200px);
+}
+
+.destaques__titulo {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.destaques__principal {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.destaques__principal {
+  background-image: url("../img/fortnite.jpg");
+  background-size: cover;
+}
+
+.destaques__secundario:nth-child(2) {
+  background-image: url("../img/pubg.jpg");
+  background-size: cover;
+}
+
+.destaques__secundario:nth-child(3) {
+  background: url("../img/slack.png");
+  height: 100%;
+  background-size: cover;
+}
+
+.destaques__secundario:nth-child(4) {
+  background: url("../img/whatsapp.png");
+  height: 100%;
+  background-size: cover;
+}
+
+.destaques__secundario:nth-child(5) {
+  background: url("../img/cs-go.jpg");
+  height: 100%;
+  background-size: cover;
+}
+
+.destaque__categorias___item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: gray;
+  padding: 1rem;
+  width: 50%;
+}
+
+.destaque__categorias___link {
+  color: #000;
+  border: 1px solid #000;
+}
+
+#menu-quadrado {
+  display: flex;
+  border: 1px solid rgb(116, 116, 116);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#menu-quadrado:hover {
+  background-color: rgb(159, 19, 246);
+}
+
+.destaques__categorias {
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+
+.destaques__categorias___lista {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(2, 100px);
+  background-color: #fff;
+}
+
+.destaques__categorias a {
+  text-decoration: none;
+  color: #2c2a2a;
+}
+
+.destaques__categorias {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.destaques__categorias___lista {
+  display: grid;
+}
+
+.destaques__categorias a {
+  text-decoration: none;
+  color: #2c2a2a;
+}
