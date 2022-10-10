@@ -54,6 +54,24 @@ if (valorCliente > soma) {
   );
 }
 
+// Questão 3
+let totalCompra = Number(
+  prompt(`QUESTÃO 3 \n---------------- \n Valor total da compra: `)
+);
+if (totalCompra < 40) {
+  alert(`Parcelamento: em até 1 vez de R$ ${totalCompra}.`);
+} else if (totalCompra >= 40 && totalCompra < 60) {
+  alert(`Parcelamento: em até 2 vezes de R$ ${totalCompra / 2}`);
+} else if (totalCompra >= 60 && totalCompra < 80) {
+  alert(`Parcelamento: em até 3 vezes de R$ ${(totalCompra / 3).toFixed(2)}`);
+} else if (totalCompra >= 80 && totalCompra < 100) {
+  alert(`Parcelamento: em até 4 vezes de R$ ${(totalCompra / 4).toFixed(2)}`);
+} else if (totalCompra >= 100 && totalCompra < 120) {
+  alert(`Parcelamento: em até 5 vezes de R$ ${(totalCompra / 5).toFixed(2)}`);
+} else {
+  alert(`Parcelamento: em até 6 vezes de R$ ${(totalCompra / 6).toFixed(2)}`);
+}
+
 // QUESTÃO 4
 // const AnosCopa = function (start = 1930, end = 2022, step = 4) {
 //   let count = 0;
