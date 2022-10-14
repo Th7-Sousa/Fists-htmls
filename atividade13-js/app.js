@@ -49,4 +49,4 @@ function MediaFunc(total, num) {
   return (total + num) / 3;
 }
 
-console.log(`${notasAlunos.reduce(MediaFunc)}`);
+console.log(`Média: ${notasAlunos.reduce(MediaFunc)}`);
