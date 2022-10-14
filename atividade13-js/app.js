@@ -32,35 +32,36 @@ alert(
   `QUESTÃO 2 \n -------------- \n X = ${X} \n Array A: [${A}] \n Array M: [${M}]`
 );
 
-// QUESTÃO 4
-// let nome;
-// let nota;
-// listaNotas = [];
-// listaNomes = [];
-// let alunos7 = {};
+// QUESTÃO 3
+var tempMedia = [27, 29, 28, 34, 32, 31, 32];
+var menorTemp = Math.min(...tempMedia);
+var maiorTemp = Math.max(...tempMedia);
+alert(
+  `QUESTÃO 3 \n ----------------- \n
+  Médias de temperaturas: [${tempMedia}]
+  \n Menor média: ${menorTemp}\n Maior média: ${maiorTemp}`
+);
 
-// while (true) {
-//   nome = prompt("nome (ou Fim para sair): ");
-//   if (nome == "Fim") {
-//     break;
-//   }
-//   listaNomes.push(nome);
-//   nota = prompt("nota: ");
-//   listaNotas.push(nota);
-// }
+// QUESTÃO 6
 
-// for (i in listaNotas) {
-//   if (i >= 7) {
-//     alunos7 = { nome: nome, nota: i };
-//   } else {
-//     console.log("Não há alunos em destaque na turma");
-//   }
-// }
+var valorSaque;
+var saquesValidos = 0;
+var saquesInvalidos = 0;
 
-// var maiorNota = listaNotas.reduce(function (a, b) {
-//   return Math.max(a, b);
-// }, -Infinity);
-
-// console.log(`Maior nota da turma: ${maiorNota}`);
-// console.log(`${listaNomes} / ${listaNotas}`);
-// console.log(alunos7);
+while (true) {
+  valorSaque = Number(prompt(`QUESTÃO 6 \n --------------- \n sacar: `));
+  if (valorSaque === 0) {
+    break;
+  } else if (valorSaque === 10) {
+    alert("Saque Válido!");
+    ++saquesValidos;
+    continue;
+  } else {
+    ++saquesInvalidos;
+    alert("Saque Inválido!");
+    continue;
+  }
+}
+alert(
+  `QUESTÃO 6 \n --------------- \n Saques inválidos: ${saquesInvalidos} \n Saques válidos ${saquesValidos}`
+);
